@@ -1,0 +1,216 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #01303f;
+    color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navbar .logo h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #fcb12a;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #fcb12a;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-btn {
+    background-color: #fcb12a;
+    color: #01303f;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #01303f;
+    color: #fff;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    max-width: 380px;
+    width: 90%;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform: translateY(50px);
+    animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-container h2 {
+    font-size: 2em;
+    color: #01303f;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid #fcb12a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.95em;
+    color: #01303f;
+    font-weight: bold;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    background-color: #e6f4ff;
+}
+
+/* Button */
+button.cta-btn {
+    background: linear-gradient(135deg, #fcb12a, #01303f);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button.cta-btn:hover {
+    background: linear-gradient(135deg, #01303f, #fcb12a);
+    transform: scale(1.03);
+}
+
+button.cta-btn:active {
+    transform: scale(0.97);
+}
+
+/* Footer */
+footer {
+    background-color: #01303f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    button.cta-btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+    .input-group-password {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Booking System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/register.html">Register</a></li>
+                <li><a href="/PHP/index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h2>Login to Your Account</h2>
+        <form action="PHP/api/login.php" method="POST" id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Wrap password input in a div with class "input-group-password" -->
+            <div class="input-group-password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+    
+            <button type="submit" class="cta-btn">Login</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Booking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

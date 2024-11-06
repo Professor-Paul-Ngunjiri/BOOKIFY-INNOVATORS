@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.booking-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+.booking-form h2 {
+    color: #01303f; /* Dark primary color */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fcb12a;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #01303f;
+    box-shadow: 0px 0px 5px rgba(1, 48, 63, 0.3);
+}
+
+/* Button Styling */
+.cta-section {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.cta-btn {
+    background-color: #fcb12a;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ffa500;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .booking-container {
+        padding: 1.5rem;
+    }
+    
+    .booking-form h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-btn {
+        padding: 0.7rem 1.5rem;
+    }
+}
